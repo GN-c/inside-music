@@ -14,18 +14,18 @@
  * limitations under the License.
  */
 
-import domready from 'domready';
-import 'style/main.scss';
-import {title, supported} from 'Config';
-import initSplash from 'splash/Splash';
-import initAFrameScene from 'init-aframe-scene';
+import domready from "domready";
+import "style/main.scss";
+import { title, supported } from "Config";
+import initSplash from "splash/Splash";
+import initAFrameScene from "init-aframe-scene";
 
-
-function main(){
-	if (supported){
-		initSplash();
-		initAFrameScene();
-	}
+function main() {
+  if (supported) {
+    console.log("-".repeat(100));
+    initSplash();
+    initAFrameScene();
+  }
 }
 
 domready(main);
